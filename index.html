@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_index.css">
+    <title>Super Simon</title>
+</head>
+<body bgcolor="#2779cc">
+    <div class="title">
+        <h1>Super Simon</h1>
+    </div>
+
+    <div id="btn" class="rondinfo">
+            <div class="rondi">
+                <p style="font-size: 27px; font-family: 'Shrikhand', cursive; display: flex; justify-content: center; margin-top: 5px;">?</p>
+            </div>
+    </div>
+
+    <div class="carre">
+        <div class="power">
+          <input type="checkbox" class="toggle" id="on" style="cursor: pointer; margin-right: 10px;;">
+          <p style="font-family: 'Shrikhand'; border: 3px solid none; margin-left: -50px; margin-top: 20px;">Allumer</p>
+        </div>
+        <div class="commencer">
+          <button class="start" id="start" style="cursor: pointer;">Commencer</button>
+        </div>
+        <div class="oneshot">
+          <input type="checkbox" class="toggle" id="oneshot" style="cursor: pointer;">
+          <p style="font-family: 'Shrikhand'; border: 3px solid none; margin-left: -80px; margin-top: 20px;">Une chance</p>
+        </div>
+
+        <div id="score"></div>
+        <div class="text02">
+          POINTS
+        </div>
+    </div>
+
+    <div class="rond00">
+        <div id="rouge" class="rond01"></div>
+        <div id="bleu" class="rond02"></div>
+        <div id="vert" class="rond03"></div>
+        <div id="jaune" class="rond04"></div>
+    </div>
+
+    <div id="mode" class="mode">
+        <div class="mode-content">
+            <div class="mode-header">
+                <span class="croix">&times;</span>
+                <p style="font-family: 'Shrikhand'; font-size: 25px; display: flex; justify-content: center;">Informations</p>
+            </div>
+            <div class="mode-body">
+                <p style="margin-bottom: 40px; font-size: 18px;">Super Simon est un jeu de mémoire. Le but est de réussir à reproduire une série de jeu de couleur qui s'affichera sur l'écran au préalable grâce aux boutons colorés.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Simon.js"> </script>
+
+</body>
+</html>
